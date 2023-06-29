@@ -35,8 +35,11 @@ For more details on how to deploy models with Azure Machine Learning, see " Depl
 ## Scripts
 This repository contains two scripts that perform different tasks related to the project. Here is a brief description of each script:
 
-* rainfall_prediction_automl.ipynb: A Jupyter notebook that contains the code to load the data, configure the AutoML settings, run the experiment, and evaluate the results.
-* score.py: A scoring script that defines how to load and use the best model for inference.
+* **conda_env_v_1_0_0.yml** : YAML file which contains the configuration pre-requisites for this experiment
+* **script_run_notebook.ipynb**: A Jupyter notebook that contains the code to load the data, configure the AutoML settings, call **script.py** , run the experiment, and evaluate the results.
+* **script.py** : contains the script to define the logging functions , featurization steps, 
+* **scoring_file_v_2_0_0.py**: A scoring script that defines how to load and use the best model for inference
+* **model.pkl** : the serialized version of the model
 ## References
 * https://www.kaggle.com/jsphyg/weather-dataset-rattle-package 
 * https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-and-where
